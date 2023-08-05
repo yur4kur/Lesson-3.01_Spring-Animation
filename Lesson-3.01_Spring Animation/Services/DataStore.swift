@@ -5,7 +5,7 @@
 //  Created by Юрий Куринной on 05.08.2023.
 //
 
-class DataStore {
+final class DataStore {
     static let shared = DataStore()
     
     let titles = ["pop",

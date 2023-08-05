@@ -15,7 +15,7 @@
 		6AB7F8E62A7E98210026E5DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AB7F8E42A7E98210026E5DC /* LaunchScreen.storyboard */; };
 		6AB7F8F42A7E99C10026E5DC /* Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AB7F8F32A7E99C10026E5DC /* Animation.swift */; };
 		6AB7F8F62A7E9B880026E5DC /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AB7F8F52A7E9B880026E5DC /* DataStore.swift */; };
-		6AB7F8F92A7E9D160026E5DC /* SpringAnimation in Frameworks */ = {isa = PBXBuildFile; productRef = 6AB7F8F82A7E9D160026E5DC /* SpringAnimation */; };
+		6AB7F8FC2A7E9E8C0026E5DC /* SpringAnimation in Frameworks */ = {isa = PBXBuildFile; productRef = 6AB7F8FB2A7E9E8C0026E5DC /* SpringAnimation */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,7 +36,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6AB7F8F92A7E9D160026E5DC /* SpringAnimation in Frameworks */,
+				6AB7F8FC2A7E9E8C0026E5DC /* SpringAnimation in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -48,6 +48,7 @@
 			children = (
 				6AB7F8D82A7E98210026E5DC /* Lesson-3.01_Spring Animation */,
 				6AB7F8D72A7E98210026E5DC /* Products */,
+				6AB7F8FA2A7E9E8C0026E5DC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -123,6 +124,13 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		6AB7F8FA2A7E9E8C0026E5DC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -140,7 +148,7 @@
 			);
 			name = "Lesson-3.01_Spring Animation";
 			packageProductDependencies = (
-				6AB7F8F82A7E9D160026E5DC /* SpringAnimation */,
+				6AB7F8FB2A7E9E8C0026E5DC /* SpringAnimation */,
 			);
 			productName = "Lesson-3.01_Spring Animation";
 			productReference = 6AB7F8D62A7E98210026E5DC /* Lesson-3.01_Spring Animation.app */;
@@ -441,7 +449,7 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		6AB7F8F82A7E9D160026E5DC /* SpringAnimation */ = {
+		6AB7F8FB2A7E9E8C0026E5DC /* SpringAnimation */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 6AB7F8F72A7E9D160026E5DC /* XCRemoteSwiftPackageReference "SpringAnimation" */;
 			productName = SpringAnimation;
