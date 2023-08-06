@@ -9,11 +9,24 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    private var animation: Animation = {
+        update()
+        
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        view.addVerticalGradientLayer(topColor: .white, bottomColor: .systemMint)
     }
 
 
+    @IBAction func runButtonTapped() {
+        print(animation)
+        animation = update()
+        print(animation)
+    }
 }
 
+private func update() -> Animation {
+    Animation.getAnimataion()
+}
