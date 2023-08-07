@@ -6,6 +6,7 @@
 //
 
 final class DataStore {
+    
     static let shared = DataStore()
     
     let titles = ["pop",
@@ -32,32 +33,32 @@ final class DataStore {
                   "swing"]
     
     let curves = ["easeIn",
-                   "easeOut",
-                   "easeInOut",
-                   "linear",
-                   "spring",
-                   "easeInSine",
-                   "easeOutSine",
-                   "easeInOutSine",
-                   "easeInQuad",
-                   "easeOutQuad",
-                   "easeInOutQuad",
-                   "easeInCubic",
-                   "easeOutCubic",
-                   "easeInOutCubic",
-                   "easeInQuart",
-                   "easeOutQuart",
-                   "easeInOutQuart",
-                   "easeInQuint",
-                   "easeOutQuint",
-                   "easeInOutQuint",
-                   "easeInExpo",
-                   "easeOutExpo",
-                   "easeInOutExpo",
-                   "easeInCirc",
-                   "easeOutCirc",
-                   "easeInOutCirc",
-                   "easeInBack",
-                   "easeOutBack",
-                   "easeInOutBack"]
+                  "easeOut",
+                  "easeInOut",
+                  "linear",
+                  "spring",
+                  "easeInSine",
+                  "easeOutSine",
+                  "easeInOutSine",
+                  "easeInQuad",
+                  "easeOutQuad",
+                  "easeInOutQuad",
+                  "easeInCubic",
+                  "easeOutCubic",
+                  "easeInOutCubic",
+                  "easeInQuart",
+                  "easeOutQuart",
+                  "easeInOutQuart",
+                  "easeInQuint",
+                  "easeOutQuint",
+                  "easeInOutQuint",
+                  "easeInExpo",
+                  "easeOutExpo",
+                  "easeInOutExpo",
+                  "easeInCirc",
+                  "easeOutCirc",
+                  "easeInOutCirc",
+                  "easeInBack",
+                  "easeOutBack",
+                  "easeInOutBack"]
 }

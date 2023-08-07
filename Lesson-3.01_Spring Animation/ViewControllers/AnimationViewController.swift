@@ -8,7 +8,7 @@
 import UIKit
 import SpringAnimation
 
-class AnimationViewController: UIViewController {
+final class AnimationViewController: UIViewController {
     
     // MARK: - IBOutlets
     @IBOutlet var animatedView: SpringView!
@@ -24,7 +24,7 @@ class AnimationViewController: UIViewController {
     
     // MARK: - Private properties
     
-    var animation = Animation.getAnimataion()
+    private var animation = Animation.getAnimataion()
      
     // MARK: - Override methods
     
@@ -38,14 +38,10 @@ class AnimationViewController: UIViewController {
 
     @IBAction func runButtonTapped() {
         updateLabels()
-        applyAnimationAndPrepareNext()
+        applyAnimationAndUpdate()
     }
     
     // MARK: - Private methods
-    
-    private func updateAnimation() -> Animation {
-        Animation.getAnimataion()
-    }
     
     private func updateLabels() {
         animationNameLabel.text = "Animation: \(animation.title)"
@@ -56,7 +52,7 @@ class AnimationViewController: UIViewController {
         animationDampingLabel.text = "Damping: \(String(format: "%.2f", animation.damping))"
     }
     
-    private func applyAnimationAndPrepareNext() {
+    private func applyAnimationAndUpdate() {
         animatedView.animation = animation.title
         animatedView.curve = animation.curve
         animatedView.force = animation.force
@@ -64,9 +60,8 @@ class AnimationViewController: UIViewController {
         animatedView.delay = animation.delay
         animatedView.damping = animation.damping
         animatedView.animateNext { [unowned self] in
-            animation = updateAnimation()
+            animation = Animation.getAnimataion()
             runButton.setTitle("Run \(animation.title)", for: .normal)
-            
         }
     }
 }
