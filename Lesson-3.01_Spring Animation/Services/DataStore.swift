@@ -61,4 +61,6 @@ final class DataStore {
                   "easeInBack",
                   "easeOutBack",
                   "easeInOutBack"]
+    
+    private init() {}
 }
